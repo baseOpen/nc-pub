@@ -1,0 +1,229 @@
+/* 各组件数据前后端交互JSON示例 */
+
+/* 卡片——查询数据JSON结构  */
+//前端请求数据结构
+
+    {
+        "pagecode": "taxregion",    //页面编码
+        "oid": "1001A410000000005985"   //单据id
+    }
+
+//后台返回数据结构
+// status      0：默认；1:修改；2：新增；3：删除
+
+    {
+        "data": {
+            "form1": {
+                "rows":[
+                {
+                    "status":0,
+                    "values":{
+                        "cemployeeid": {
+                            "display": null,
+                            "scale": -1,
+                            "value": null
+                        },
+                        "noritotalmny": {
+                            "display": null,
+                            "scale": 2,
+                            "value": "540.00"
+                        },
+                        "ts": {
+                            "display": null,
+                            "scale": -1,
+                            "value": "2017-07-26 14:06:58"
+                        },
+                        "pk_org_v": {
+                            "display": "农仁街电子商务有限公司",
+                            "scale": -1,
+                            "value": "0001Z51000000000IF62"
+                        },
+                        "ccustomerid": {
+                            "display": "test",
+                            "scale": -1,
+                            "value": "1001Z51000000000FRG3"
+                        },
+                        "dmakedate": {
+                            "display": null,
+                            "scale": -1,
+                            "value": "2017-07-22 00:00:00"
+                        }
+                    }
+                }
+                ]
+            },
+            "gird1": {
+                "pageInfo": {
+                    "pageIndex": "1",
+                    "pageSize": "10",
+                    "total": "23",
+                    "totalPage": "3"
+                },
+                "rows": [
+                    {
+                        "rowId": "0",
+                        "status": 0,
+                        "values": {
+                            "noritotalmny": {
+                                "display": null,
+                                "scale": 2,
+                                "value": "540.00"
+                            },
+                            "ts": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "2017-07-26 14:06:58"
+                            },
+                            "pk_org_v": {
+                                "display": "农仁街电子商务有限公司",
+                                "scale": -1,
+                                "value": "0001Z51000000000IF62"
+                            },
+                            "ccustomerid": {
+                                "display": "test",
+                                "scale": -1,
+                                "value": "1001Z51000000000FRG3"
+                            },
+                            "dmakedate": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "2017-07-22 00:00:00"
+                            },
+                            "vbillcode": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "21414"
+                            }
+                        }
+                    },
+                    {
+                        "rowId": "2",
+                        "status": 0,
+                        "values": {
+                            "cemployeeid": {
+                                "display": null,
+                                "scale": -1,
+                                "value": null
+                            },
+                            "noritotalmny": {
+                                "display": null,
+                                "scale": 2,
+                                "value": "540.00"
+                            },
+                            "ts": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "2017-07-26 14:06:58"
+                            },
+                            "pk_org_v": {
+                                "display": "农仁街电子商务有限公司",
+                                "scale": -1,
+                                "value": "0001Z51000000000IF62"
+                            },
+                            "ccustomerid": {
+                                "display": "test",
+                                "scale": -1,
+                                "value": "1001Z51000000000FRG3"
+                            },
+                            "dmakedate": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "2017-07-22 00:00:00"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "error": null,
+        "success": true
+    }
+
+//保存，前端请求数据结构
+// status      0：默认；1:修改；2：新增；3：删除
+{
+	//表格
+    "taxregion_grid": {
+        "areaType": "table",
+        "pageInfo": {
+            "pageIndex": "1",
+            "pageSize": "10",
+            "total": "23",
+            "totalPage": "3"
+        },
+        "rows": [
+            {
+                "rowId": 1,
+                "status": 1,
+                "values": {
+                    "pk_region": {
+                        "display": "pk_region",
+                        "scale": "1",
+                        "value": "1001Z01000000000SGFI"
+                    },
+                    "name": {
+                        "display": "pk_region",
+                        "scale": "1",
+                        "value": "1001Z01000000000SGFI"
+                    }
+                }
+            },
+            {
+                "rowId": 2,
+                "status": 1,
+                "values": {
+                    "pk_region": {
+                        "display": "pk_region",
+                        "scale": "1",
+                        "value": "1001Z01000000000SGFG"
+                    }
+                }
+            }
+        ]
+    },
+    //表单
+	"taxregion_form": {
+        "areaType": "form",
+        "name": "",
+        "status": 1,
+        "rows": [{
+            "code": {
+                "display": "code",
+                "scale": "3",
+                "value": "200941"
+            },
+            "pk_country": {
+                "display": "pk_country",
+                "scale": "1",
+                "value": "0001Z010000000079UJJ"
+            },
+            "pk_org": {
+                "display": "pk_org",
+                "scale": "1",
+                "value": "GLOBLE00000000000000"
+            },
+            "pk_group": {
+                "display": "pk_group",
+                "scale": "1",
+                "value": "0001A1100000000005T5"
+            },
+            "remark": {
+                "display": "remark",
+                "scale": "3",
+                "value": "这就是呀呀呀呀呀"
+            },
+            "name": {
+                "display": "name",
+                "scale": "3",
+                "value": "呀呀呀呀呀 "
+            },
+            "creator": {
+                "display": "creator",
+                "scale": "3",
+                "value": "1001A41000000000592P"
+            }
+        }]
+    }
+}
+
+

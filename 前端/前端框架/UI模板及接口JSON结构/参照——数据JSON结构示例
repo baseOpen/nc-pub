@@ -1,0 +1,90 @@
+/* 各组件数据前后端交互JSON示例 */
+
+/* 树型参照——数据JSON结构 */
+//前端请求数据JSON结构
+{
+    "pid": "root", //节点pk
+    "keyword": "", //模糊搜索主键
+    "pageInfo": {
+        "pageIndex": -1, // -1 时，不分页，查全部
+        "pageSize": 10,	//每页显示条数
+        "total": 0,	//数据总条数
+        "totalPage": 0	//总页数
+    },
+    "queryCondition": {} //自定义条件
+}
+
+//后台返回数据JSON结构
+{
+        "data": {
+            "pageInfo": {
+                "pageIndex": "0",
+                "pageSize": "10",
+                "total": "0",
+                "totalPage": "3"
+            },
+            "rows": [
+                {
+                    "pid": "1001A110000000001UPG", //父节点主键
+                    "isleaf": true, //是否叶子节点
+                    "refcode": "020001",  //档案编码
+                    "refname": "中国农业银行广州番禺兴业大道支行",  //档案名称
+                    "refpk": "1001A1100000000010Y7",  //档案pk
+                    "values": {}  //自定义返回值
+                },
+                {
+                    "pid": "1001A110000000001UPA", //父节点主键
+                    "isleaf": true, //是否叶子节点
+                    "refcode": "020001",  //档案编码
+                    "refname": "中国农业银行广州番支行",  //档案名称
+                    "refpk": "1001A1100000000010Y7",  //档案pk
+                    "values": {}  //自定义返回值
+                }
+            ]
+        }
+        ,
+        "error": "",
+        "success": true
+    }
+
+/* 表格型参照——数据结构  */
+//前端请求数据结构
+{
+    "keyword": "", //模糊搜索主键
+    "pageInfo": {
+    "pageIndex": -1, // -1 时，不分页，查全部
+        "pageSize": 10,
+        "total": 0,
+        "totalPage": 0
+},
+    "queryCondition": {} //自定义条件
+}
+
+//后台返回数据结构
+{
+    "data": {
+    "pageInfo": {
+        "pageIndex": "0",
+            "pageSize": "10",
+            "total": "0",
+            "totalPage": "3"
+    },
+    "rows": [
+        {
+            "refcode": "020001",  //档案编码
+            "refname": "中国农业银行广州番禺兴业大道支行",  //档案名称
+            "refpk": "1001A1100000000010Y7",  //档案pk
+            "values": {}  //自定义返回值
+        },
+        {
+            "refcode": "020001",  //档案编码
+            "refname": "中国农业银行广州番支行",  //档案名称
+            "refpk": "1001A1100000000010Y7",  //档案pk
+            "values": {}  //自定义返回值
+        }
+    ]
+},
+    "error": "",
+    "success": true
+}
+

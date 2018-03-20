@@ -1,0 +1,121 @@
+/* 各组件数据前后端交互JSON示例 */
+
+/* 列表——数据结构 */
+//前端请求数据结构
+
+    {
+        "conditions": [{    //查询条件
+            "field": "dr",
+            "value": "0"
+        }, {
+            "field": "pk_country",
+            "value": "0001Z010000000079UJJ"
+        }],
+        "funcnode": "10140taxregion",   //节点号
+        "pagecode": "taxregion",    //页面编码
+        "pageInfo": {
+            "pageIndex": 0,
+            "pageSize": 10,
+            "total": 23,
+            "totalPage": 3
+        },
+        "queryAreaCode":"taxregion",    //查询区编码
+        "billAreaCode": "tablename",    //单据区域编码
+        "metapath": "uap.taxregion"     //元数据路径
+    }
+	
+// status      0：默认；1:修改；2：新增；3：删除
+
+//后台返回数据结构
+
+    {
+        "data": {
+            "gird1": {
+                "pageInfo": {
+                    "pageIndex": "1",
+                    "pageSize": "10",
+                    "total": "23",
+                    "totalPage": "3"
+                },
+                "rows": [
+                    {
+                        "rowId": "1",
+                        "status": 0,
+                        "values": {
+                            "noritotalmny": {
+                                "display": null,
+                                "scale": 2,
+                                "value": "540.00"
+                            },
+                            "ts": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "2017-07-26 14:06:58"
+                            },
+                            "pk_org_v": {
+                                "display": "农仁街电子商务有限公司",
+                                "scale": -1,
+                                "value": "0001Z51000000000IF62"
+                            },
+                            "ccustomerid": {
+                                "display": "test",
+                                "scale": -1,
+                                "value": "1001Z51000000000FRG3"
+                            },
+                            "dmakedate": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "2017-07-22 00:00:00"
+                            },
+                            "vbillcode": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "21414"
+                            }
+                        }
+                    },
+                    {
+                        "rowId": "2",
+                        "status": 0,
+                        "values": {
+                            "cemployeeid": {
+                                "display": null,
+                                "scale": -1,
+                                "value": null
+                            },
+                            "noritotalmny": {
+                                "display": null,
+                                "scale": 2,
+                                "value": "540.00"
+                            },
+                            "ts": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "2017-07-26 14:06:58"
+                            },
+                            "pk_org_v": {
+                                "display": "农仁街电子商务有限公司",
+                                "scale": -1,
+                                "value": "0001Z51000000000IF62"
+                            },
+                            "ccustomerid": {
+                                "display": "test",
+                                "scale": -1,
+                                "value": "1001Z51000000000FRG3"
+                            },
+                            "dmakedate": {
+                                "display": null,
+                                "scale": -1,
+                                "value": "2017-07-22 00:00:00"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "error": null,
+        "success": true
+    }
+
+
+

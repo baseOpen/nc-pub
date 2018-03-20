@@ -1,0 +1,256 @@
+/* 前端发送请求模板 JSON数据结构 */
+    {
+        "pagecode": "taxregion",
+        "userid": "12242asdf233"
+    }
+
+/* 后台返回模板JSON结构 */
+    {
+        "data": {
+            "pagecode": "taxregion",
+            "pagename": "测试页面",
+            "templets": {
+
+                // 查询区模板
+                "searchdemo": {
+                    "id": "0001Z01000000007LHOV",
+                        "moduletype": "search",
+                        "items": [
+                        //input 、label、datepicker、rangepicker、number、switch、textarea类型模板结构
+                        {
+                            "attrcode": "pk_taxregion_b", //属性编码
+                            "attrmetapath": "pk_taxregion_b",//属性元数据路径
+                            "col": "3", //控件所占空间
+                            "disabled": false,//控件是否可编辑
+                            "formattype": null,//控件格式化类型
+                            "itemtype": "label",//控件类型
+                            "label": "税收行政地区主键", //控件显示名称
+                            "leftspace": "0",//控件偏离左侧几个空格
+                            "maxlength": "0",//控件录入数据的最大长度
+                            "options": null,//下拉框显示数据
+                            "ratio": null,//计算比率
+                            "required": false,//是否必输
+                            "rightspace": "0",//控件偏离右侧几个空格
+                            "rows": "0",//多行文本显示行数(textarea 专用哦)
+                            "scale": "0",//精度（number类型所用）
+                            "unit": null,//控件显示单位
+                            "visible": false,//控件是否显示
+                            "width": null, //控件宽度
+                            "initialvalue": {//控件默认值
+                                "value": "",
+                                "display": ""
+                            }
+                        },
+
+                        //select、radio、checkbox类型（options结构）
+                        {
+                            "attrcode": "pk_taxregion_b", //属性编码
+                            "attrmetapath": "pk_taxregion_b",//属性元数据路径
+                            "col": "3", //控件所占空间
+                            "disabled": false,//控件是否可编辑
+                            "formattype": null,//控件格式化类型
+                            "itemtype": "input",//控件类型
+                            "label": "税收行政地区主键", //控件显示名称
+                            "leftspace": "0",//控件偏离左侧几个空格
+                            "maxlength": "0",//控件录入数据的最大长度
+                            "options": [
+                                {
+                                    "display": "本级产生",
+                                    "value": "0"
+                                },
+                                {
+                                    "display": "上级下发",
+                                    "value": "1"
+                                },
+                                {
+                                    "display": "下级上报",
+                                    "value": "2"
+                                },
+                                {
+                                    "display": "本级产生已上报下发",
+                                    "value": "3"
+                                },
+                                {
+                                    "display": "系统预置",
+                                    "value": "-1"
+                                }
+                            ],
+                            "ratio": null,//计算比率
+                            "required": false,//是否必输
+                            "rightspace": "0",//控件偏离右侧几个空格
+                            "rows": "0",//多行文本显示行数
+                            "scale": "0",//精度
+                            "unit": null,//控件显示单位
+                            "visible": false,//控件是否显示
+                            "width": null, //控件宽度
+                            "initialvalue": {//控件默认值
+                                "value": "",
+                                "display": ""
+                            }
+                        }
+                    ]
+                },
+
+                // 表单模板
+                "formdemo": {
+                    "id": "0001Z01000000007LHOV",
+                    "moduletype": "form",
+                    "items": [
+                        //input 、label、datepicker、rangepicker、number、switch、textarea类型模板结构
+                        {
+                            "attrcode": "pk_taxregion_b", //属性编码
+                            "attrmetapath": "pk_taxregion_b",//属性元数据路径
+                            "col": "3", //控件所占空间
+                            "disabled": false,//控件是否可编辑
+                            "formattype": null,//控件格式化类型
+                            "itemtype": "label",//控件类型
+                            "label": "税收行政地区主键", //控件显示名称
+                            "leftspace": "0",//控件偏离左侧几个空格
+                            "maxlength": "0",//控件录入数据的最大长度
+                            "options": null,//下拉框显示数据
+                            "ratio": null,//计算比率
+                            "required": false,//是否必输
+                            "rightspace": "0",//控件偏离右侧几个空格
+                            "rows": "0",//多行文本显示行数(textarea 专用哦)
+                            "scale": "0",//精度（number类型所用）
+                            "unit": null,//控件显示单位
+                            "visible": false,//控件是否显示
+                            "width": null, //控件宽度
+                            "initialvalue": {//控件默认值
+                                "value": "",
+                                "display": ""
+                            }
+                        },
+
+                        //select、radio、checkbox类型（options结构）
+                        {
+                            "attrcode": "pk_taxregion_b", //属性编码
+                            "attrmetapath": "pk_taxregion_b",//属性元数据路径
+                            "col": "3", //控件所占空间
+                            "disabled": false,//控件是否可编辑
+                            "formattype": null,//控件格式化类型
+                            "itemtype": "input",//控件类型
+                            "label": "税收行政地区主键", //控件显示名称
+                            "leftspace": "0",//控件偏离左侧几个空格
+                            "maxlength": "0",//控件录入数据的最大长度
+                            "options": [
+                                {
+                                    "display": "本级产生",
+                                    "value": "0"
+                                },
+                                {
+                                    "display": "上级下发",
+                                    "value": "1"
+                                },
+                                {
+                                    "display": "下级上报",
+                                    "value": "2"
+                                },
+                                {
+                                    "display": "本级产生已上报下发",
+                                    "value": "3"
+                                },
+                                {
+                                    "display": "系统预置",
+                                    "value": "-1"
+                                }
+                            ],
+                            "ratio": null,//计算比率
+                            "required": false,//是否必输
+                            "rightspace": "0",//控件偏离右侧几个空格
+                            "rows": "0",//多行文本显示行数
+                            "scale": "0",//精度
+                            "unit": null,//控件显示单位
+                            "visible": false,//控件是否显示
+                            "width": null, //控件宽度
+                            "initialvalue": {//控件默认值
+                                "value": "",
+                                "display": ""
+                            }
+                        }
+                    ]
+                },
+
+                // 表格模板
+                "tabledemo": {
+                    "id": "0001Z01000000007LHOV",
+                    "moduletype": "table",
+                    "items": [
+                        /*
+                         *  删除了col/leftspace/rightspace，添加了pagination分页信息属性
+                         */
+
+                        //  input 、label、datepicker、rangepicker、number、switch、textarea类型模板结构
+                        {
+                            "attrcode": "pk_taxregion_b", //属性编码
+                            "attrmetapath": "pk_taxregion_b",//属性元数据路径
+                            "disabled": false,//控件是否可编辑
+                            "formattype": null,//控件格式化类型
+                            "itemtype": "label",//控件类型
+                            "label": "税收行政地区主键", //控件显示名称
+                            "maxlength": "0",//控件录入数据的最大长度
+                            "options": null,//下拉框显示数据
+                            "ratio": null,//计算比率
+                            "required": false,//是否必输
+                            "rows": "0",//多行文本显示行数(textarea 专用哦)
+                            "scale": "0",//精度（number类型所用）
+                            "unit": null,//控件显示单位
+                            "visible": false,//控件是否显示
+                            "width": null, //控件宽度
+                            "initialvalue": {//控件默认值
+                                "value": "",
+                                "display": ""
+                            }
+                        },
+
+                        //  select、radio、checkbox类型（options结构）
+                        {
+                            "attrcode": "pk_taxregion_b", //属性编码
+                            "attrmetapath": "pk_taxregion_b",//属性元数据路径
+                            "disabled": false,//控件是否可编辑
+                            "formattype": null,//控件格式化类型
+                            "itemtype": "input",//控件类型
+                            "label": "税收行政地区主键", //控件显示名称
+                            "maxlength": "0",//控件录入数据的最大长度
+                            "options": [
+                                {
+                                    "display": "本级产生",
+                                    "value": "0"
+                                },
+                                {
+                                    "display": "上级下发",
+                                    "value": "1"
+                                },
+                                {
+                                    "display": "下级上报",
+                                    "value": "2"
+                                },
+                                {
+                                    "display": "本级产生已上报下发",
+                                    "value": "3"
+                                },
+                                {
+                                    "display": "系统预置",
+                                    "value": "-1"
+                                }
+                            ],
+                            "ratio": null,//计算比率
+                            "required": false,//是否必输
+                            "rows": "0",//多行文本显示行数
+                            "scale": "0",//精度
+                            "unit": null,//控件显示单位
+                            "visible": false,//控件是否显示
+                            "width": null, //控件宽度
+                            "initialvalue": {//控件默认值
+                                "value": "",
+                                "display": ""
+                            }
+                        }
+                    ],
+                    "pagination": true //是否需要分页
+                }
+            }
+        },
+        "error": null,
+        "success": true
+    }
